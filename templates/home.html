@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Daisy's Website</title>
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+<div class="top-container">
+    <div class="title-text">
+        <h1>Daisy's Website</h1>
+        <!-- display Python date_time string -->
+        <h3>The date and time is: {{ date_time }}</h3>
+    </div>
+    <img src="/static/images/daisy.jpeg" alt="daisy dog picture">
+</div>
+
+<div class="middle-container">
+    <div class="profile">
+        <h2>Hello.</h2>
+        <p class="intro">I am Daisy. A 7 year-old 🐕.</p>
+        <h3>Me Doing My Favorite Things!</h3>
+        <!-- Table with 4 rows and 3 columns. -->
+        <table class="center">
+            <thead>
+
+            <tr>
+                <th>Place</th>
+                <th>Activity 1</th>
+                <th>Activity 2</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <td><a href="/beach">Beach Days 🏖</a></td>
+                <td>Digging In Sand</td>
+                <td>Napping</td>
+            </tr>
+            <tr>
+                <td><a href="/snow">Snow Days ☃️</a></td>
+                <td>Snow Play</td>
+                <td>Napping</td>
+            </tr>
+            <tr>
+                <td><a href="/backyard">Backyard Fun 🏡</a></td>
+                <td>Chasing Squirrels</td>
+                <td>Napping</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<div class="bottom-container">
+    <h3>Some cool links:</h3>
+    <!-- external links-->
+    <a class="footer-link" href="https://giphy.com/explore/dog">Dog Gifs</a>
+    <a class="footer-link" href="https://dogecoin.com/">Dog Money</a>
+    <a class="footer-link" href="https://www.dogshaming.com/">Dogs Less Clever Than I</a>
+</div>
+
+<div class="bottom-container">
+    <a href="/logout">🐶Logout 🐶</a>
+</div>
+<div class="bottom-container">
+    <a href="/update"> * Update Password * </a>
+</div>
+</body>
+
+</html>

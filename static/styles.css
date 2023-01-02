@@ -1,0 +1,82 @@
+body {
+  margin: 25px;
+  background-color: rgb(240,240,240);
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+
+h1 {
+  color:Purple;
+  font-size: 21px;
+
+}
+
+h2 {
+  color: Red;
+  font-size: 18px;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #13137c;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 2;
+}
+
+a{
+
+  margin-right: 10px;
+
+}
+
+.button{
+  display: inline-block;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 13px;
+  height: 30px;
+  background-color: #0000000d;
+  color: #0e0e10;
+  padding: 0 20px;
+  margin: 20px 10px;
+
+}
+
+.top-container {
+  position: relative;
+  padding-top: 20px;
+}
+
+.middle-container {
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.bottom-container {
+  text-align: center;
+  padding: 10px 0 10px;
+}
+
+.myList {
+  display: inline-block;
+  text-align: left;
+}
+
+.myOrderedList {
+  display: inline-block;
+  text-align: left;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+

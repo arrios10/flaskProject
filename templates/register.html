@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+<div class="top-container">
+    <h1>Please Register</h1>
+    <br>
+
+    <form action="" method="post">
+        <div class="middle-container">
+            <input type="text" placeholder="Username" name="username" value="{{ request.form.username }}" required>
+        </div>
+        <div>
+            <input type="password" placeholder="Password" name="password" value="{{ request.form.password }}" required>
+        </div>
+        <div>
+            <input class="button" type="submit" name="submit" value="Register">
+        </div>
+    </form>
+    {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+    {% endif %}
+</div>
+
+<div class="bottom-container">
+    <a href="/login">Already Registered? Log In Here. 🖥</a>
+</div>
+
+</body>
+
+</html>

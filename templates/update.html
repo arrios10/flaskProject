@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Update Password Page</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+<div class="top-container">
+    <h1>Update Password</h1>
+    <br>
+
+    <form action="" method="post">
+        <div class="middle-container">
+        <p class="error"><strong>Username:</strong> {{ username }}
+        </div>
+        <div>
+            <input type="password" placeholder="Password" name="password" value="{{ request.form.password }}">
+        </div>
+        <div>
+            <input class="button" type="submit" name="submit" value="Submit">
+        </div>
+    </form>
+    {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+    {% endif %}
+    {% if message %}
+        <p class="error"><strong>Success:</strong> {{ message }}
+    {% endif %}
+</div>
+
+<div class="bottom-container">
+    <a href="/register">Not Registered? Sign Up Here. 🖥</a>
+</div>
+
+</body>
+
+</html>
